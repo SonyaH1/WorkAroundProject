@@ -10,6 +10,7 @@ import com.example.workaroundproject.room.domain.usecases.InsertNoteUseCaseImpl
 import com.example.workaroundproject.room.domain.usecases.ObserveListOfNotesUseCase
 import com.example.workaroundproject.room.domain.usecases.ObserveListOfNotesUseCaseImpl
 
+@Deprecated("Use Hilt for dependency injection")
 object NoteDependencyInjector {
 
     private lateinit var repository: NoteRepository

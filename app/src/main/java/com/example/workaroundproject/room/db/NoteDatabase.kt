@@ -1,8 +1,7 @@
 package com.example.workaroundproject.room.db
 
-import android.content.Context
+
 import androidx.room.Database
-import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.workaroundproject.room.dao.NoteDao
 
@@ -14,6 +13,11 @@ import com.example.workaroundproject.room.dao.NoteDao
 )
 abstract class NoteDatabase : RoomDatabase() {
 
+    abstract fun noteDatabaseDao() : NoteDao
+}
+
+/*
+old version ->
     companion object{
         private const val DATABASE_NAME = "note_database"
 
@@ -36,4 +40,4 @@ abstract class NoteDatabase : RoomDatabase() {
     }
 
     abstract fun noteDatabaseDao() : NoteDao
-}
+ */

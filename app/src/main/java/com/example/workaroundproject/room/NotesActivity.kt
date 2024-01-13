@@ -10,11 +10,12 @@ import com.example.workaroundproject.cat_retrofit.ui.vm.CatFactViewState
 import com.example.workaroundproject.databinding.NoteActivityBinding
 import com.example.workaroundproject.databinding.RecyclerViewActivityBinding
 import com.example.workaroundproject.room.domain.entities.NoteItem
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlin.random.Random
 
-
+@AndroidEntryPoint
 class NotesActivity : AppCompatActivity() {
     private lateinit var binding: NoteActivityBinding
     private val customAdapter by lazy {

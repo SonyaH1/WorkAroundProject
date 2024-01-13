@@ -7,8 +7,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class NoteRepositoryImpl(
+@Singleton
+class NoteRepositoryImpl @Inject constructor(
     private val noteDao: NoteDao
 ): NoteRepository {
 
